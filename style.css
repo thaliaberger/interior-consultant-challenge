@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lora&family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #181719;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+
+.interior-btn {
+  border: 1px solid white;
+  background-color: #181719;
+  font-size: 14px;
+  font-family: "Crimson Pro", serif;
+  width: 103px;
+  height: 31px;
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 10px;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: lighter;
+  width: 250px;
+  margin: 20px 0;
+}
+
+.read-more-btn {
+  font-size: 14px;
+  font-weight: bold;
+  background: none;
+  color: white;
+  border: none;
+  margin: 20px 0 40px 0;
+}
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.photo-div {
+  display: flex;
+  justify-content: center;
+}
+
+.design-pic {
+  margin: 0 10px;
+  width: 350px;
+}
+
+.photo-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.designer-div {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  margin-left: -150px;
+  background-color: #181719;
+  width: 300px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.designer-div-info {
+  display: flex;
+  margin-left: 30px;
+}
+
+.designer-div p {
+  width: 200px;
+  margin-left: 30px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+
+.designer-div h5 {
+  font-size: 12px;
+}
+
+.designer-div small {
+  color: #828282;
+  font-size: 10px;
+}
+
+.designer-pic {
+  border-radius: 50%;
+  width: 36px;
+  margin-right: 10px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 150px;
+}
+
+footer p {
+  padding: 10px 0;
+  color: #a9a9a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* HAMBURGUER MENU */
+
+.sub-menu {
+  padding: 0 0 0 2%;
+  float: right;
+  right: -700px;
+  top: 0;
+  transition: all 0.3s ease;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  background-color: #181719;
+  text-align: center;
+  border-radius: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.oppenned {
+  right: 0;
+}
+.sub-menu ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sub-menu li {
+  display: block;
+  list-style: none;
+  height: auto;
+  margin-left: 0;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin-top: 50px;
+}
+.sub-menu li:first-child {
+  margin-top: 100px;
+}
+.sub-menu li a {
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  float: left;
+  line-height: 30px;
+  border-bottom: 1px solid #181719;
+}
+.sub-menu li a:hover {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  z-index: 2;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.c-hamburger:focus {
+  outline: none;
+}
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: white;
+}
+.c-hamburger span:before,
+.c-hamburger span:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+}
+.c-hamburger span:before {
+  top: -10px;
+}
+.c-hamburger span:after {
+  bottom: -10px;
+}
+.c-hamburger--htx span {
+  -webkit-transition: 0s 0.3s;
+  transition: 0s 0.3s;
+}
+.c-hamburger--htx span:before,
+.c-hamburger--htx span:after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition-delay: 0.3s, 0s;
+}
+.c-hamburger--htx span:before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+}
+.c-hamburger--htx span:after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+}
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+.c-hamburger--htx.is-active span:before,
+.c-hamburger--htx.is-active span:after {
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+.c-hamburger--htx.is-active span:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.c-hamburger--htx.is-active span:after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 1000px) {
+  .interior-btn {
+    margin: 30px 80px;
+  }
+  .navbar {
+    align-items: center;
+  }
+
+  .sub-menu {
+    right: 0;
+    top: 0;
+    width: 600px;
+    margin-top: 20px;
+    height: 30px;
+  }
+  .sub-menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sub-menu li {
+    margin-left: 70px;
+    margin-top: 0px;
+  }
+
+  .sub-menu li:first-child {
+    margin-top: 0;
+  }
+
+  .c-hamburger {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .design-pic {
+    margin: 50px 0 100px 80px;
+    width: 600px;
+  }
+
+  .designer-div {
+    top: 450px;
+    margin-left: -100px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+    width: 400px;
+  }
+
+  .read-more-btn {
+    font-size: 18px;
+  }
+
+  footer {
+    margin-top: 0px;
+  }
+}
